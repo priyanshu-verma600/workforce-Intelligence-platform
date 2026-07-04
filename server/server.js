@@ -1,13 +1,8 @@
 import express from "express";
 import cors from "cors";
-// import "dotenv/config";
 import dotenv from "dotenv";
 
-const result = dotenv.config();
-
-console.log(result);
-console.log(process.env.MONGODB_URI);
-
+dotenv.config();
 import multer from "multer";
 import connectDB from "./config/db.js";
 import authRouter from "./routes/authRoutes.js";
